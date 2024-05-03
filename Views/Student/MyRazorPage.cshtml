@@ -1,0 +1,27 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelper;
+@model WebApp1BySijan.Models.Student;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h1>Welcome to My Razor Page</h1>
+    <p>Current date and time: @DateTime.Now</p>
+    <p>Name: Sijan Karki</p>
+    <p>Roll no:28</p>
+    <p>Multiplication table of My roll number plus one:</p>
+    <table>
+        @for (int i = 1; i <= 10; i++)
+        {
+            <tr>
+                <td>@i</td>
+                <td> * </td>
+                <td>29 = </td>
+                <td>@(i * (28 + 1))</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
